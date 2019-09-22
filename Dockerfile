@@ -194,7 +194,7 @@ ENV IS_DOCKER_8395080871=1
 
 RUN ldconfig
 WORKDIR /tmp/
-ENTRYPOINT ["/usr/local/miniconda/bin/fmriprep"]
+#ENTRYPOINT ["/usr/local/miniconda/bin/fmriprep"]
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -204,6 +204,6 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.description="fMRIPrep - robust fMRI preprocessing tool" \
       org.label-schema.url="http://fmriprep.org" \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/poldracklab/fmriprep" \
+      org.label-schema.vcs-url="https://github.com/fanhantianxia/wb_fmriprep" \
       org.label-schema.version=$VERSION \
       org.label-schema.schema-version="1.0"
